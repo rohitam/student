@@ -6,8 +6,6 @@ class Student(models.Model):
     first_name = models.TextField(default='')
     last_name = models.TextField(default='')
 
-    # class Meta:
-    #     db_table = 'Student'
 
 class Marks(models.Model):
     stu_id = models.ForeignKey(Student, on_delete=models.CASCADE)

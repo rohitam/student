@@ -1,6 +1,5 @@
 from django.http import HttpResponse
 from rest_framework.views import APIView
-from rest_framework import serializers
 from .models import Student
 from .serialize_data import StuGetSerializer, StudentPostSerializer, MarksGetSerializer
 from rest_framework.response import Response

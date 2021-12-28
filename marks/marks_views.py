@@ -89,10 +89,7 @@ class MarksView(APIView):
             return Response({'data': serialized_marks.data,
                              'response': "Hello, world. This is marks apps, marks added existing"})
             return HttpResponse("Hello, world. This is marks apps, marks added existing**")
-        # serialized_marks = MarksGetSerializer(chk_marks[0])
-        # print(serialized_marks)
-        # return Response(serialized_marks.data)
-        # return HttpResponse("Hello, world. This is marks apps, marks added ret")
+
         stu = Student.objects.filter(id=stu_id)
         print('LENGTH', len(stu))
         if len(stu) == 0:

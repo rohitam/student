@@ -45,8 +45,6 @@ class StudentPostSerializer(CustomSerializer):
     last_name = serializers.CharField(max_length=30)
     email = serializers.CharField(max_length=60)
 
-    # serializers.IntegerField()
-
 class MarksPostSerializer(CustomSerializer):
     maths = serializers.IntegerField()
     physics = serializers.IntegerField()
